@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--------Header-------------------------->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-logo">
+                        <a href="/index.html"><img src="img/logo.png" alt="logo"></a>
+
+                    </div>
+
+                    <input class="side-menu" type="checkbox" id="side-menu"/>
+
+
+                    <div class="col-navi">
+                        <div class="nav">
+                          <ul>
+                            <li><a href="/index.html#top-offers">Top offers</a></li>
+                            <li><a href="/catalog.html">Search in offers</a></li>
+                            <li><a href="/index.html#references">References</a></li>
+                            <li><a href="/index.html#about-us">About us</a></li>
+                            <li><a href="/index.html#our-team">Our team</a></li>
+                          </ul> 
+                        </div>
+                        <div class="burger">   
+                            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                        </div>
+                        
+                    </div>
+
+
+
+                    <div class="col-contact">
+                        <a href="#" class="db-button" id="db-button">Contact us</a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal__content">
+                  <button class="modal__close-button"><img src="./img/close.png" width="18" alt=""></button>
+                  <!-- Контент модального окна -->
+                  <div class="modal-title">Contact us by phone:</div>
+                  <div class="modal-phone"><img src="img/tel-img.png" alt="">   +34 555 781 731</div>
+                  <div class="modal-title" id="mod-last">Or send Message:</div>
+
+                  <div class="modal-input-wrap">
+                    <input type="text" class="modal-name" placeholder = "Your full name" name="modal-name">
+                    <label for="modal-name">Full name</label>
+                  </div>
+
+                  <div class="modal-second-row">
+                  <div class="modal-input-wrap">
+                    <input type="tel" class="modal-tel" placeholder = "Your phone number" name="modal-tel">
+                    <label for="modal-tel">Phone number</label>
+                  </div>
+
+                  <div class="modal-input-wrap">
+                    <input type="text" class="modal-mail" placeholder = "Your E-mail" name="modal-mail">
+                    <label for="modal-mail">E-mail</label>
+                  </div>
+                  </div>
+
+                  <div class="modal-input-wrap">
+                    <input type="text" class="modal-comment"  name="modal-comment">
+                    <label for="modal-comment">Your message</label>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  <button class="modal-button">Send Message</button>
+                </div>
+              </div>
+        </header>
+
+        <main>
+
+        <!--------catalog-title-------------------------->
+        <section class="catalog-title">
+           <div class="container">
+            <div class="row">
+                <div class="col">
+                   <h2>Search for an offer</h2>
+                   <div class="shl">Choose from the most advantageous offers</div>                    
+                </div>
+
+
+
+            </div>
+           </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!--------catalog-form-------------------------->
+
+        <section class="catalog-form">
+            <div class="container ">
+             <form action="#" method="POST" id="filter">
+                <div class="row catalog-form-first-row">
+                    <div class="catalog-form-line"></div>
+                    <div class="catalog-form-title"><span>Filter settings</span></div>
+                    <div class="catalog-form-line"></div>
+                </div>
+                 <div class="row catalog-form-second-row">
+                    <select name="categoryfilter">
+                        <option value="choose"><span>Select number of rooms</span> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                    <select name="categoryfilter">
+                        <option value="choose">Select location</option>
+                        <option value="1">Madrid</option>
+                        <option value="2">Barcelona</option>
+                    </select>
+
+                    <select name="categoryfilter">
+                        <option value="choose">Select  property type</option>
+                        <option value="1">Villa</option>
+                        <option value="2">Apartment</option>
+                    </select>
+ 
+                 </div>
+
+
+                 <div class="row catalog-form-third-row">
+                    <div class="range-line">
+                        <div class="range-pointer-left"></div>
+                        <div class="range-pointer-right"></div>
+                    </div>
+                 </div>
+                 <div class="row catalog-form-four-row ">
+                    <div class="input-line">
+                        <input disabled class="price-input"  id="price-input-min" type="number" name="cena_min" placeholder="Минимальная цена" value= "100000"  >
+                        <div class="euro">€</div>
+                        <div class="input-betwen"></div>
+                        <input readonly class="price-input" id="price-input-max"  type="number" name="cena_max" placeholder="Максимальная цена" value= "600000"  >
+                        <div class="euro">€</div>
+                    </div>
+                 </div>
+
+                 <div class="row catalog-form-fifth-row">
+                    <select name="categoryfilter">
+                        <option value="choose">Number of rooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                    <select name="categoryfilter">
+                        <option value="choose">Select location</option>
+                        <option value="1">Madrid</option>
+                        <option value="2">Barcelona</option>
+                    </select>
+
+                    <button type="submit"  id="submit" >  <img src="img/search.png" alt=""><div class="search">Search</div>
+                    </button>
+ 
+                 </div>
+
+             </form>
+            </div>
+         </section>
+
+
+
+
+        <!--------catalog-response-------------------------->
+            <section class="catalog-response">
+                <div class="container">
+                    <div class="row catalog-response-row">
+                                  
+                        <a href="/flat.html"  class="offer">
+                            <img src="img/re1.png" alt="">
+                            <div class="offer-info">
+                                <h6>1Large 4-room apartment with a beautiful terrace </h6>
+                                <p class="price">320 000€</p>
+                                <span class="city">Barcelona IX.</span>
+                            </div>
+                        </a>
+
+                        <a href="/flat.html" class="offer">
+                            <img src="img/re2.png" alt="">
+                            <div class="offer-info">
+                                <h6>2 large design apartment with terrace</h6>
+                                
+                                  <p class="price">400 000€</p>
+                                  <span class="city">Madrid VI.</span>
+                                
+                            </div>
+                        </a>
+
+                        <a href="/flat.html" class="offer">
+                            <img src="img/re3.png" alt="">
+                            <div class="offer-info">
+                                <h6>3-room apartment with a beautiful terrace</h6>
+                                <p class="price">350 000€</p>
+                                <span class="city">Madrid II.</span>
+                            </div>
+                        </a>
+
+                        <a href="/flat.html"  class="offer">
+                            <img src="img/re1.png" alt="">
+                            <div class="offer-info">
+                                <h6>4 Small 5-room apartment with a beautiful terrace </h6>
+                                <p class="price">370 000€</p>
+                                <span class="city">Barcelona IX.</span>
+                            </div>
+                        </a> 
+
+                        <a href="/flat.html" class="offer">
+                            <img src="img/re2.png" alt="">
+                            <div class="offer-info">
+                                <h6>5 large design apartment with terrace</h6>
+                                
+                                  <p class="price">400 000€</p>
+                                  <span class="city">Madrid VI.</span>
+                                
+                            </div>
+                        </a>
+
+                        <a href="/flat.html" class="offer">
+                            <img src="img/re2.png" alt="">
+                            <div class="offer-info">
+                                <h6>6 large design apartment with terrace</h6>
+                                
+                                  <p class="price">555 000€</p>
+                                  <span class="city">Madrid VI.</span>
+                                
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        <!--------Subscribe-------------------------->
+            <section class="subscribe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-subscribe-icon">
+                            <img src="img/icon-subscribe.png" alt="">
+                        </div>
+                        <div class="col-subscribe-mail">
+                            <h4>Subscribe to newsletter</h4>
+                            <div class="shl">Get the latest news and interesting offers and real estate</div>
+                            <div class="input-wrap">
+                               <input type="text" placeholder="Your e-mail address">
+                               <a class="w-button" href="#">Subscribe</a>                          
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--------Footer-------------------------->    
+        
+        
+        <footer>
+            <div class="container">
+                <div class="row ">
+                 <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                </div>
+            </div>            
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/range.js"></script>
+    
+</body>
+</html>

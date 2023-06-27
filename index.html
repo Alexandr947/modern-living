@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--------Header-------------------------->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-logo">
+                        <a href="/index.html"><img src="img/logo.png" alt="logo"></a>
+
+                    </div>
+
+                    <input class="side-menu" type="checkbox" id="side-menu"/>
+
+
+                    <div class="col-navi">
+                        <div class="nav">
+                          <ul>
+                            <li><a href="/index.html#top-offers">Top offers</a></li>
+                            <li><a href="/catalog.html">Search in offers</a></li>
+                            <li><a href="/index.html#references">References</a></li>
+                            <li><a href="/index.html#about-us">About us</a></li>
+                            <li><a href="/index.html#our-team">Our team</a></li>
+                          </ul> 
+                        </div>
+                        <div class="burger">   
+                            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                        </div>
+                        
+                    </div>
+
+
+
+                    <div class="col-contact">
+                        <a href="#" class="db-button" id="db-button">Contact us</a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="modal">
+                <div class="modal__content">
+                  <button class="modal__close-button"><img src="./img/close.png" width="18" alt=""></button>
+                  <!-- Контент модального окна -->
+                  <div class="modal-title">Contact us by phone:</div>
+                  <div class="modal-phone"><img src="img/tel-img.png" alt="">   +34 555 781 731</div>
+                  <div class="modal-title" id="mod-last">Or send Message:</div>
+
+                  <div class="modal-input-wrap">
+                    <input type="text" class="modal-name" placeholder = "Your full name" name="modal-name">
+                    <label for="modal-name">Full name</label>
+                  </div>
+
+                  <div class="modal-second-row">
+                  <div class="modal-input-wrap">
+                    <input type="tel" class="modal-tel" placeholder = "Your phone number" name="modal-tel">
+                    <label for="modal-tel">Phone number</label>
+                  </div>
+
+                  <div class="modal-input-wrap">
+                    <input type="text" class="modal-mail" placeholder = "Your E-mail" name="modal-mail">
+                    <label for="modal-mail">E-mail</label>
+                  </div>
+                  </div>
+
+                  <div class="modal-input-wrap">
+                    <input type="text" class="modal-comment"  name="modal-comment">
+                    <label for="modal-comment">Your message</label>
+                  </div>
+                  
+                  <button class="modal-button">Send Message</button>
+                </div>
+              </div>
+
+
+
+        </header>
+
+        <main>
+        <!--------modern-living-------------------------->
+        <section class="modern-living">
+            <div class="container">
+                <div class="row">
+                    <div class="modern-living-col-left">
+                        <h1>Modern living for everyone</h1>
+                        <div class="shl">We provide a complete service for the sale, purchase or rental of real estate. We have been operating in Madrid and Barcelona more than 15 years.</div>
+                        <form action="">
+                              <select name="">
+                                  <option value="choose">Property type</option>
+                                  <option value="1">Villa</option>
+                                  <option value="2">Apartment</option>
+                              </select>
+        
+                              <select name="">
+                                  <option value="choose">Select location</option>
+                                  <option value="1">Madrid</option>
+                                  <option value="2">Barcelona</option>
+                              </select>
+        
+                              <button type="submit"  id="submit1" >  <img src="img/search.png" alt=""><div class="search">Search</div>
+                              </button>
+                        </form>
+                    </div>
+                    <div class="modern-living-col-right">
+                        <img src="img/header-picture.jpg" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <!--------top-offers-------------------------->
+            <section class="top-offers" id="top-offers">
+                <div class="container">
+                    <div class="row top-offers-row-1 "><h2>Top offers</h2></div>
+                    <div class="row top-offers-row-2">
+                        <div class="top-offers-row-2-leftcol">
+                            <div class="shl">Fulfill your career dreams, enjoy all the achievements of the city center and luxury housing to the fullest.</div>
+                        </div>
+                        <div class="top-offers-row-2-rightcol"><a class="w-button" href="/catalog.html">Show all offers</a></div>                                           
+                    </div>
+                    <div class="row top-offers-row-3">
+                        <div class="top-offers-row-3-leftcol"><div class="line"><div class="pointer"></div></div></div>
+                        <div class="top-offers-row-3-rightcol">
+                            <div id="prev" class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                            <div id="next" class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                        </div> 
+                    </div>
+                    <div class="row top-offers-row-4">
+                      <div class="slider" style="left: 0">
+                        
+                        <a href="/flat.html"  class="offer">
+                            <img src="img/re1.png" alt="">
+                            <div class="offer-info">
+                                <h6>1Large 4-room apartment with a beautiful terrace </h6>
+                                <p class="price">320 000€</p>
+                                <span class="city">Barcelona IX.</span>
+                            </div>
+                        </a>
+
+                        <a href="/flat.html" class="offer">
+                            <img src="img/re2.png" alt="">
+                            <div class="offer-info">
+                                <h6>2 large design apartment with terrace</h6>
+                                
+                                  <p class="price">400 000€</p>
+                                  <span class="city">Madrid VI.</span>
+                                
+                            </div>
+                        </a>
+
+                        <a href="/flat.html" class="offer">
+                            <img src="img/re3.png" alt="">
+                            <div class="offer-info">
+                                <h6>3-room apartment with a beautiful terrace</h6>
+                                <p class="price">350 000€</p>
+                                <span class="city">Madrid II.</span>
+                            </div>
+                        </a>
+
+                        <a href="/flat.html"  class="offer">
+                            <img src="img/re1.png" alt="">
+                            <div class="offer-info">
+                                <h6>4 Small 5-room apartment with a beautiful terrace </h6>
+                                <p class="price">370 000€</p>
+                                <span class="city">Barcelona IX.</span>
+                            </div>
+                        </a>                        
+                        <a href="/flat.html" class="offer">
+                            <img src="img/re2.png" alt="">
+                            <div class="offer-info">
+                                <h6>5 large design apartment with terrace</h6>
+                                
+                                  <p class="price">400 000€</p>
+                                  <span class="city">Madrid VI.</span>
+                                
+                            </div>
+                        </a>
+
+                        <a href="#" class="offer">
+                            <img src="img/re2.png" alt="">
+                            <div class="offer-info">
+                                <h6>6 large design apartment with terrace</h6>
+                                
+                                  <p class="price">555 000€</p>
+                                  <span class="city">Madrid VI.</span>
+                                
+                            </div>
+                        </a>
+
+
+                      </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        <!--------about-us-------------------------->
+
+            <section class="about-us"  id="about-us">
+                <div class="container">
+                  <div class="row">
+                    <div class="about-us-col-left">
+                        <img src="img/about-us.png" alt="about-us">
+                    </div>
+                    <div class="about-us-col-right">
+                        <h2>About us</h2>
+                        <p>We are a company that connects the world of real estate and finance. We provide a complete service for the sale, purchase or rental of real estate. Our advantage is more than 15 years of experience and soil in attractive locations in Slovakia with branches in Bratislava and Košice.</p>
+                        <p>  </p>
+                        <p>We have a connection to all banks on the Slovak market, so we can solve everything under one roof. By constantly innovating our business activities, we move forward and we are able to offer truly above-standard services that set us apart from the competition.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+        <!--------our-team-------------------------->
+
+           <section class="our-team"  id="our-team">
+             <div class="container">
+              <div class="row our-team-people">
+                <div class="our-team-title">
+                    <h2>Our Team</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus rutrum donec ultricies cras id ac.</p>
+                </div>
+                <div class="our-person">
+                    <img src="img/person-carder.png" alt="">
+                    <h6>Davis Carder</h6>
+                    <p>Super duper position</p>
+                </div>
+                <div class="our-person">
+                    <img src="img/person-press.png" alt="">
+                    <h6>Maren Press</h6>
+                    <p>Super duper position</p>
+                </div>
+                <div class="our-person">
+                    <img src="img/person-rosser.png" alt="">
+                    <h6>Randy Rosser</h6>
+                    <p>Super duper position</p>
+                </div>
+                <div class="our-person">
+                    <img src="img/person-donin.png" alt="">
+                    <h6>Haylie Donin</h6>
+                    <p>Super duper position </p>
+                </div>
+                <div class="our-person">
+                    <img src="img/person-bater.png" alt="">
+                    <h6>Miracle Bator</h6>
+                    <p>Super duper position</p>
+                </div>
+              </div>
+
+
+             </div>
+           </section>
+
+        <!--------references-------------------------->
+
+           <section class="references"  id="references">
+             <div class="container">
+                <div class="row">
+                    <div class="col">
+                       <h2>References</h2>
+                       <div class="shl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus rutrum donec ultricies cras id ac.</div>
+                    </div>
+                </div>
+
+                <div class="row references-row-second">
+                  <div class="references-slider">
+                    <div class="reference">
+                        <div class="reference-content">
+                           <div class="deco">“</div> 
+                           <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.</p>
+                        </div>
+                        <h6>Emerson Aminoff</h6>
+                        <p>3 bedroom apartmentt in Madrid</p>
+                    </div>
+
+                    <div class="reference">
+                        <div class="reference-content">
+                           <div class="deco">“</div> 
+                           <p>2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. </p>
+                        </div>
+                        <h6>Jocelyn Stanton</h6>
+                        <p>2 bedroom apartmentt in Barcelona</p>
+                    </div>
+
+                    <div class="reference">
+                        <div class="reference-content">
+                           <div class="deco">“</div> 
+                           <p>3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. </p>
+                        </div>
+                        <h6>Jocelyn Stanton</h6>
+                        <p>2 bedroom apartmentt in Barcelona</p>
+                    </div>
+
+                    <div class="reference">
+                        <div class="reference-content">
+                           <div class="deco">“</div> 
+                           <p>4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. </p>
+                        </div>
+                        <h6>Jocelyn Stanton</h6>
+                        <p>2 bedroom apartmentt in Barcelona</p>
+                    </div>
+
+                    <div class="reference">
+                        <div class="reference-content">
+                           <div class="deco">“</div> 
+                           <p>5Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. </p>
+                        </div>
+                        <h6>Jocelyn Stanton</h6>
+                        <p>2 bedroom apartmentt in Barcelona</p>
+                    </div>
+
+                    <div class="reference">
+                        <div class="reference-content">
+                           <div class="deco">“</div> 
+                           <p>6Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. </p>
+                        </div>
+                        <h6>Jocelyn Stanton</h6>
+                        <p>2 bedroom apartmentt in Barcelona</p>
+                    </div>
+                </div>
+
+                </div>
+                <div class="row references-row-third">
+                  <div class="dot-container">
+
+                  </div>
+                </div>
+             </div>
+           </section>
+
+
+
+        <!--------Subscribe-------------------------->
+            <section class="subscribe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-subscribe-icon">
+                            <img src="img/icon-subscribe.png" alt="">
+                        </div>
+                        <div class="col-subscribe-mail">
+                            <h4>Subscribe to newsletter</h4>
+                            <div class="shl">Get the latest news and interesting offers and real estate</div>
+                            <div class="input-wrap">
+                               <input type="text" placeholder="Your e-mail address">
+                               <a class="w-button" href="#">Subscribe</a>                          
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--------Footer-------------------------->    
+        
+        
+        <footer>
+            <div class="container">
+                <div class="row ">
+                 <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                </div>
+            </div>            
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slaiderref.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
