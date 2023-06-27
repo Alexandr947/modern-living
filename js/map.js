@@ -19,7 +19,7 @@
 			balloonContent: "<div class='ya_map'>Заезжайте в гости!</div>" // Подсказка метки
 		}, {
 			iconLayout: 'default#image',
-		    iconImageHref: '../img/iconmap.png',
+		    iconImageHref: '../modern-living/img/iconmap.png',
 		    iconImageSize: [42, 55],
 		    iconImageOffset: [-19, -44] // Тип метки
 		});
